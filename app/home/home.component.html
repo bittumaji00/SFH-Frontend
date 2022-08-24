@@ -1,0 +1,13 @@
+<p>home works!</p>
+
+<div class="container">
+
+    <div *ngFor ="let product of products" class="item">
+        {{product.id}}
+        {{product.name}}
+        {{product.price}}
+        <img src="assets/images/{{product.url}}">
+        <a  routerLink="active">More Details</a>
+        <button  mat-raised-button colour="primary">Add to Wishlist</button>
+    </div>
+    </div>
