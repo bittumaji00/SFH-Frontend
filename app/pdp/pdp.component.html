@@ -1,12 +1,13 @@
 
-<p>displaylist works!</p>
+<p>pdp works!</p>
 
-<h1>Display List of Students</h1>
+<h1>Display List of Productss</h1>
 
 <div>
     
 
 <div class="container col-md-6">
+    <button mat-raised-button color="primary" routerLink="create-product">Create Product</button>
 <table class="table table-dark">
 
 
@@ -18,7 +19,7 @@
 <button  (click)="updateProduct(product.id)" class="btn btn-sm btn-info" >
 Update</button></td>
 <td>
-<button  class="btn btn-sm btn-danger">
+<button  (click)="deleteProduct(product.id)"  class="btn btn-sm btn-danger">
     Delete</button></td>
 
 </tr>

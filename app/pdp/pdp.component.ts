@@ -23,7 +23,7 @@ export class PdpComponent implements OnInit {
   getProductsTable(){
     this.pservice.getAllProducts().subscribe(res=>{
       console.log(res);
-      alert("inside pdp")
+      
 
         res.forEach( data => { 
 
@@ -38,9 +38,21 @@ export class PdpComponent implements OnInit {
    updateProduct(id:number){
     alert(id+" product will upadate")
     this.route.navigate(['update-product',id])
-    alert("hhfg")
+    
 
 
+   }
+
+   deleteProduct(id:number){
+    alert("product "+id+" will be deleted")
+    this.pservice.deleteProductById(id).subscribe(res=>{
+      if(res)
+      alert(id+" deleted")
+    },
+    (err)=>{
+      alert(id+" deleted")
+
+    });
    }
 
 

@@ -20,8 +20,9 @@ import { HomeComponent } from './home/home.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
-import { UserComponent } from './user/user.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import {ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,6 @@ import { UserLoginComponent } from './user-login/user-login.component';
     FileUploadComponent,
     AdminComponent,
     AdminLoginComponent,
-    UserComponent,
     UserLoginComponent
   ],
   imports: [
@@ -47,7 +47,9 @@ import { UserLoginComponent } from './user-login/user-login.component';
     FormsModule,
     HttpClientModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    ReactiveFormsModule
+    
    
   ],
   providers: [],

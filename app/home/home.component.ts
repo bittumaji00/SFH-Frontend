@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 import { ProductService } from '../product.service';
+import { Ng2SearchPipeModule } from "ng2-search-filter";
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import { ProductService } from '../product.service';
 })
 export class HomeComponent implements OnInit {
   products: Product[]=[]
+  searchText:any
 
   constructor(private pservice:ProductService) { }
 
