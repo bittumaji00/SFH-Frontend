@@ -22,6 +22,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     FileUploadComponent,
     AdminComponent,
     AdminLoginComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,

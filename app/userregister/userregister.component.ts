@@ -13,6 +13,7 @@ export class UserregisterComponent implements OnInit {
   constructor(private uservice:UserService) { }
 
   user : User={
+    id:0,
     name: '',
     email: '',
     password: '',
